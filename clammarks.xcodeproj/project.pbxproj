@@ -1,0 +1,410 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		BE9B3EDA2B292F9500A029DD /* arm_instructionrate.c in Sources */ = {isa = PBXBuildFile; fileRef = BE0071A02B27E6D500E9E803 /* arm_instructionrate.c */; };
+		BE9B3EDB2B292F9500A029DD /* arm_instructionrate.s in Sources */ = {isa = PBXBuildFile; fileRef = BE0071A12B27E6D500E9E803 /* arm_instructionrate.s */; };
+		BE9B3EED2B292FCC00A029DD /* MemoryLatency_arm.s in Sources */ = {isa = PBXBuildFile; fileRef = BE00719B2B27E6CE00E9E803 /* MemoryLatency_arm.s */; };
+		BE9B3EEE2B292FCC00A029DD /* MemoryLatency.c in Sources */ = {isa = PBXBuildFile; fileRef = BE00719C2B27E6CE00E9E803 /* MemoryLatency.c */; };
+		BE9B3F002B292FED00A029DD /* MemoryBandwidth_arm.s in Sources */ = {isa = PBXBuildFile; fileRef = BE5269B02B26E6740035E9B2 /* MemoryBandwidth_arm.s */; };
+		BE9B3F012B292FED00A029DD /* MemoryBandwidth.c in Sources */ = {isa = PBXBuildFile; fileRef = BE5269AF2B26E6740035E9B2 /* MemoryBandwidth.c */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		BE00719B2B27E6CE00E9E803 /* MemoryLatency_arm.s */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.asm; path = MemoryLatency_arm.s; sourceTree = "<group>"; };
+		BE00719C2B27E6CE00E9E803 /* MemoryLatency.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = MemoryLatency.c; sourceTree = "<group>"; };
+		BE0071A02B27E6D500E9E803 /* arm_instructionrate.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = arm_instructionrate.c; sourceTree = "<group>"; };
+		BE0071A12B27E6D500E9E803 /* arm_instructionrate.s */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.asm; path = arm_instructionrate.s; sourceTree = "<group>"; };
+		BE5269AF2B26E6740035E9B2 /* MemoryBandwidth.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = MemoryBandwidth.c; sourceTree = "<group>"; };
+		BE5269B02B26E6740035E9B2 /* MemoryBandwidth_arm.s */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.asm; path = MemoryBandwidth_arm.s; sourceTree = "<group>"; };
+		BE9B3ECD2B292F6200A029DD /* instructionrate.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = instructionrate.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		BE9B3EE02B292FC400A029DD /* memorylatency.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = memorylatency.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		BE9B3EF32B292FE800A029DD /* memorybandwidth.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = memorybandwidth.app; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		BE9B3ECA2B292F6200A029DD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BE9B3EDD2B292FC400A029DD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BE9B3EF02B292FE800A029DD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		BE5269942B26E6600035E9B2 = {
+			isa = PBXGroup;
+			children = (
+				BE9B3ECE2B292F6200A029DD /* instructionrate */,
+				BE9B3EE12B292FC400A029DD /* memorylatency */,
+				BE9B3EF42B292FE900A029DD /* memorybandwidth */,
+				BE52699E2B26E6600035E9B2 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		BE52699E2B26E6600035E9B2 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BE9B3ECD2B292F6200A029DD /* instructionrate.app */,
+				BE9B3EE02B292FC400A029DD /* memorylatency.app */,
+				BE9B3EF32B292FE800A029DD /* memorybandwidth.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BE9B3ECE2B292F6200A029DD /* instructionrate */ = {
+			isa = PBXGroup;
+			children = (
+				BE0071A02B27E6D500E9E803 /* arm_instructionrate.c */,
+				BE0071A12B27E6D500E9E803 /* arm_instructionrate.s */,
+			);
+			path = instructionrate;
+			sourceTree = "<group>";
+		};
+		BE9B3EE12B292FC400A029DD /* memorylatency */ = {
+			isa = PBXGroup;
+			children = (
+				BE00719B2B27E6CE00E9E803 /* MemoryLatency_arm.s */,
+				BE00719C2B27E6CE00E9E803 /* MemoryLatency.c */,
+			);
+			path = memorylatency;
+			sourceTree = "<group>";
+		};
+		BE9B3EF42B292FE900A029DD /* memorybandwidth */ = {
+			isa = PBXGroup;
+			children = (
+				BE5269AF2B26E6740035E9B2 /* MemoryBandwidth.c */,
+				BE5269B02B26E6740035E9B2 /* MemoryBandwidth_arm.s */,
+			);
+			path = memorybandwidth;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		BE9B3ECC2B292F6200A029DD /* instructionrate */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BE9B3ED82B292F6300A029DD /* Build configuration list for PBXNativeTarget "instructionrate" */;
+			buildPhases = (
+				BE9B3EC92B292F6200A029DD /* Sources */,
+				BE9B3ECA2B292F6200A029DD /* Frameworks */,
+				BE9B3ECB2B292F6200A029DD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = instructionrate;
+			productName = instructionrate;
+			productReference = BE9B3ECD2B292F6200A029DD /* instructionrate.app */;
+			productType = "com.apple.product-type.application";
+		};
+		BE9B3EDF2B292FC400A029DD /* memorylatency */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BE9B3EEB2B292FC400A029DD /* Build configuration list for PBXNativeTarget "memorylatency" */;
+			buildPhases = (
+				BE9B3EDC2B292FC400A029DD /* Sources */,
+				BE9B3EDD2B292FC400A029DD /* Frameworks */,
+				BE9B3EDE2B292FC400A029DD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = memorylatency;
+			productName = memorylatency;
+			productReference = BE9B3EE02B292FC400A029DD /* memorylatency.app */;
+			productType = "com.apple.product-type.application";
+		};
+		BE9B3EF22B292FE800A029DD /* memorybandwidth */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BE9B3EFE2B292FE900A029DD /* Build configuration list for PBXNativeTarget "memorybandwidth" */;
+			buildPhases = (
+				BE9B3EEF2B292FE800A029DD /* Sources */,
+				BE9B3EF02B292FE800A029DD /* Frameworks */,
+				BE9B3EF12B292FE800A029DD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = memorybandwidth;
+			productName = memorybandwidth;
+			productReference = BE9B3EF32B292FE800A029DD /* memorybandwidth.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BE5269952B26E6600035E9B2 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1510;
+				LastUpgradeCheck = 1500;
+				TargetAttributes = {
+					BE9B3ECC2B292F6200A029DD = {
+						CreatedOnToolsVersion = 15.1;
+					};
+					BE9B3EDF2B292FC400A029DD = {
+						CreatedOnToolsVersion = 15.1;
+					};
+					BE9B3EF22B292FE800A029DD = {
+						CreatedOnToolsVersion = 15.1;
+					};
+				};
+			};
+			buildConfigurationList = BE5269982B26E6600035E9B2 /* Build configuration list for PBXProject "clammarks" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = BE5269942B26E6600035E9B2;
+			productRefGroup = BE52699E2B26E6600035E9B2 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				BE9B3ECC2B292F6200A029DD /* instructionrate */,
+				BE9B3EF22B292FE800A029DD /* memorybandwidth */,
+				BE9B3EDF2B292FC400A029DD /* memorylatency */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		BE9B3ECB2B292F6200A029DD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BE9B3EDE2B292FC400A029DD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BE9B3EF12B292FE800A029DD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		BE9B3EC92B292F6200A029DD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BE9B3EDA2B292F9500A029DD /* arm_instructionrate.c in Sources */,
+				BE9B3EDB2B292F9500A029DD /* arm_instructionrate.s in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BE9B3EDC2B292FC400A029DD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BE9B3EEE2B292FCC00A029DD /* MemoryLatency.c in Sources */,
+				BE9B3EED2B292FCC00A029DD /* MemoryLatency_arm.s in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BE9B3EEF2B292FE800A029DD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BE9B3F012B292FED00A029DD /* MemoryBandwidth.c in Sources */,
+				BE9B3F002B292FED00A029DD /* MemoryBandwidth_arm.s in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		BE5269AA2B26E6610035E9B2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		BE9B3ED92B292F6300A029DD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = pm.dingo.clammarks.instructionrate;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		BE9B3EEC2B292FC400A029DD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = pm.dingo.clammarks.memorylatency;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		BE9B3EFF2B292FE900A029DD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = pm.dingo.clammarks.memorybandwidth;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		BE5269982B26E6600035E9B2 /* Build configuration list for PBXProject "clammarks" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BE5269AA2B26E6610035E9B2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BE9B3ED82B292F6300A029DD /* Build configuration list for PBXNativeTarget "instructionrate" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BE9B3ED92B292F6300A029DD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BE9B3EEB2B292FC400A029DD /* Build configuration list for PBXNativeTarget "memorylatency" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BE9B3EEC2B292FC400A029DD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BE9B3EFE2B292FE900A029DD /* Build configuration list for PBXNativeTarget "memorybandwidth" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BE9B3EFF2B292FE900A029DD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BE5269952B26E6600035E9B2 /* Project object */;
+}
