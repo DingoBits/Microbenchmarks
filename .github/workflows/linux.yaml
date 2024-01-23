@@ -1,5 +1,7 @@
 name: Build Benchmarks on Ubuntu
-on: [push, workflow_dispatch]
+on:
+  push:
+  workflow_dispatch:
 jobs:
   BuildBenchmarks:
     # Only Ubuntu for now.
@@ -21,4 +23,4 @@ jobs:
         env:
           UPLOAD_KEY: ${{ secrets.UPLOAD_KEY }}
           UPLOAD_URL: ${{ secrets.UPLOAD_URL }}
-        run:  curl -X PUT -T clammarks.txz -H "$UPLOAD_KEY" "$UPLOAD_URL"
+        run:  curl -X PUT -T clammarks.txz "$UPLOAD_URL"
