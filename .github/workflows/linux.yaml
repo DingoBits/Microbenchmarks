@@ -1,5 +1,5 @@
 name: Build Benchmarks on Ubuntu
-on: [push]
+on: [push, workflow_dispatch]
 jobs:
   BuildBenchmarks:
     # Only Ubuntu for now.
